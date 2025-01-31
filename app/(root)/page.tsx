@@ -24,9 +24,25 @@ export default function Home() {
     <section id="events" className="wrapper my-8 flex flex-col gap-8 md:gap-12">
       <h2 className="h2-bold">Trusted by <br /> All!!</h2>
 
-      <div className="flex w-flex flex-col gap-5 md:flex-row">
-      Search
-      CategoryFilters
+      <div className="flex w-full flex-col gap-5 md:flex-row">
+        <div className="bg-white shadow-md rounded-lg p-5 w-full md:w-1/3">
+          <h3 className="text-lg font-semibold">React Summit 2025</h3>
+          <p className="text-gray-600">📅 March 15, 2025</p>
+          <p className="text-gray-600">📍 San Francisco, CA</p>
+          <Button className="mt-3 w-full">Register</Button>
+        </div>
+        <div className="bg-white shadow-md rounded-lg p-5 w-full md:w-1/3">
+          <h3 className="text-lg font-semibold">Next.js Global Meetup</h3>
+          <p className="text-gray-600">📅 April 10, 2025</p>
+          <p className="text-gray-600">📍 New York, NY</p>
+          <Button className="mt-3 w-full">Register</Button>
+        </div>
+        <div className="bg-white shadow-md rounded-lg p-5 w-full md:w-1/3">
+          <h3 className="text-lg font-semibold">Tailwind CSS Workshop</h3>
+          <p className="text-gray-600">📅 May 5, 2025</p>
+          <p className="text-gray-600">📍 Los Angeles, CA</p>
+          <Button className="mt-3 w-full">Register</Button>
+        </div>
       </div>  
     </section>
     </>
