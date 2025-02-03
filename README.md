@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Evently - Event Hosting and Booking Platform
 
-## Getting Started
+## Overview
+Evently is a modern event hosting and booking platform designed to help users host and celebrate their events with ease. The platform provides a seamless experience for exploring, booking, and managing events. Built with Next.js, Tailwind CSS, and other modern web technologies, Evently ensures an optimized and user-friendly interface.
 
-First, run the development server:
+## Tech Stack
+- **Frontend:** Next.js, React, Tailwind CSS
+- **Backend:** Node.js, Express.js (to be implemented)
+- **Database:** MongoDB (Atlas)
+- **Authentication:** Clerk (to be configured)
+- **Deployment:** Vercel
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features Implemented
+- Responsive and stylish UI with Tailwind CSS
+- Home page with an introduction to Evently
+- Dynamic event listings with basic details (title, date, location, and registration button)
+- Navigation with a header and footer
+- Basic routing using Next.js
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation & Setup
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/evently.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd evently
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+4. Set up environment variables in a `.env.local` file:
+   ```env
+   MONGODB_URI=your_mongodb_connection_string
+   NEXT_PUBLIC_CLERK_FRONTEND_API=your_clerk_api_key
+   ```
+5. Run the development server:
+   ```sh
+   npm run dev
+   ```
+6. Open `http://localhost:3000` in your browser to see the project in action.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Future Improvements
+- **Booking System**: Implement event registration and ticket booking functionality.
+- **Search & Filters**: Add event searching and category-based filtering.
+- **Backend API**: Set up a Node.js and Express.js backend for better data handling.
+- **Database Integration**: Fully integrate MongoDB with event storage and retrieval.
+- **Admin Dashboard**: Provide admin-level controls for event moderation.
+- **Payment Integration**: Implement Stripe for ticket payments.
+- **SEO Optimization**: Improve search engine visibility.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
